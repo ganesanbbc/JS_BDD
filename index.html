@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="js/models.js"></script>
+	<script src="js/taskPresenter.js"></script>
+	<script src="js/taskView.js"></script>
+	<script src="js/listPresenter.js"></script>
+	<script src="js/listView.js"></script>
+</head>
+<body>
+	
+	<script>
+	
+		var list 	= new ListPresenter(new ListView());
+		
+		$("body").append(list.getView().getHtml());
+		
+	
+	</script>
+	
+</body>
+</html>
